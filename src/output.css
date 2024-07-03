@@ -994,6 +994,12 @@ video {
   outline-offset: 2px;
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:w-full {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-6 {
     grid-column: span 6 / span 6;
