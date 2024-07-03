@@ -993,6 +993,12 @@ video {
   outline-offset: 2px;
 }
 
+@media not all and (min-width: 768px) {
+  .max-md\:h-48 {
+    height: 12rem;
+  }
+}
+
 @media not all and (min-width: 640px) {
   .max-sm\:mt-4 {
     margin-top: 1rem;
