@@ -995,6 +995,10 @@ video {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .max-sm\:w-full {
     width: 100%;
   }
