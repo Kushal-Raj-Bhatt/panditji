@@ -806,6 +806,11 @@ video {
      object-fit: cover;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -892,6 +897,10 @@ video {
 
 .pr-1 {
   padding-right: 0.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-4 {
@@ -999,11 +1008,30 @@ video {
   outline-offset: 2px;
 }
 
-@media not all and (min-width: 768px) {
-  .max-md\:col-span-3 {
-    grid-column: span 3 / span 3;
+@media not all and (min-width: 1024px) {
+  .max-lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
+  .max-lg\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .max-lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .max-lg\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .max-lg\:pt-7 {
+    padding-top: 1.75rem;
+  }
+}
+
+@media not all and (min-width: 768px) {
   .max-md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1014,10 +1042,6 @@ video {
 }
 
 @media not all and (min-width: 640px) {
-  .max-sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .max-sm\:col-span-6 {
     grid-column: span 6 / span 6;
   }
@@ -1032,12 +1056,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 }
 
@@ -1070,5 +1094,9 @@ video {
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
   }
 }
